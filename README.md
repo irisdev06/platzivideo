@@ -1,2 +1,2 @@
 ﻿# platzivideo
-[Miralo aquí](https://codepen.io/irisvaldev/pen/dyOxmXQ"Codepen")
+[Miralo aquí](https://codepen.io/irisvaldev/pen/dyOxmXQ)
