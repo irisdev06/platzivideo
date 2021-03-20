@@ -131,6 +131,8 @@ ul:hover {
     margin-right: 10px;
     display: inline-block;
     cursor: pointer;
+    transition: 450ms all;
+    transform-origin: center left;
 }
 
 .carrousel__item:hover ~.carrousel__item:hover {
@@ -143,5 +145,25 @@ ul:hover {
 
 .carrousel__container:hover .carrousel__item:hover{ 
     transform: scale(1.3);
+    opacity: 1;
+}
 
+.carrousel-item__img{
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+
+}
+
+.carrousel-item__details {
+    background-color: linear-gradient(to top, rgba(0, 0, 0, 0.9) 100%);
+    font-size: 10px;
+    opacity: 0;
+    transition: 450ms opacity;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
