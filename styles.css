@@ -101,6 +101,7 @@ ul:hover {
     border-radius: 25px;
     height: 50px;
     width: 70%;
+    outline: none;
 
 }
 
