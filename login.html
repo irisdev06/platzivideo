@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./login.css">
+    <script src="./registrar.php"></script>
 </head>
 
 <body>
@@ -16,10 +17,10 @@
     <section class="login">
         <section class="login__container">
             <h2>Inicia Sesión</h2>
-            <form class="login__container--form">
+            <form class="login__container--form" method="post" action="/registrar.php">
                 <input class="input" type="text" placeholder="Correo">
                 <input class="input" type="password" placeholder="Contraseña">
-                <button class="button">Iniciar sesión</button>
+                <button type="submit" class="button">Iniciar sesión</button>
                 <div class="login__container--remember-me">
                     <label>
                         <input type="checkbox" name="" id="cbox1" value="checkbox">Recuerdame
@@ -28,6 +29,7 @@
 
                 </div>
             </form>
+            
             <section class="login__container--social-media">
                 <div><img class="login__container--google" src="./img/google-icon.png">Inicia Sesión con Google</div>
                 <div><img class="login__container--twitter" src="./img/twitter-icon.png">Inicia Sesión con Twitter</div>
