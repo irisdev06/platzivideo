@@ -12,11 +12,12 @@ body {
 .header {
     background: rgb(33, 214, 205);
     background: radial-gradient(circle, rgba(78, 227, 247, 0.452) 0%, rgb(4, 97, 114) 100%);
-    width: 100%;
-    height: 80px;
+    width: 100% auto;
+    height: 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .header__img {
@@ -137,20 +138,20 @@ ul:hover {
     position: relative;
 }
 
-.carrousel-item:hover ~.carrousel-item:hover {
+.carrousel-item:hover~.carrousel-item:hover {
     transform: translate3d(100px, 0, 0);
 }
 
-.carrousel__container:hover .carrousel-item{ 
+.carrousel__container:hover .carrousel-item {
     opacity: 0.3;
 }
 
-.carrousel__container:hover .carrousel-item:hover{ 
+.carrousel__container:hover .carrousel-item:hover {
     transform: scale(1.3);
     opacity: 2;
 }
 
-.carrousel-item__img{
+.carrousel-item__img {
     width: 200px;
     height: 250px;
     object-fit: cover;
@@ -160,7 +161,6 @@ ul:hover {
 .carrousel-item__details {
     background-color: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
     font-size: 10px;
-    opacity: 0;
     transition: 450ms opacity;
     padding: 10px;
     position: absolute;
@@ -168,4 +168,51 @@ ul:hover {
     left: 0;
     right: 0;
     bottom: 0;
+}
+
+.carrousel-item__details img {
+    color: white;
+    width: auto;
+    height: 20px;
+}
+
+.carrousel-item__details--title { 
+    font-size: 10px;
+    color: white;
+}
+
+.footer {
+    background: radial-gradient(circle, rgba(78, 227, 247, 0.452) 0%, rgb(4, 97, 114) 100%);
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+}
+
+.footer a {
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    padding-left: 30px;
+    text-decoration: none;
+
+
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+    .login__container {
+        background-color: transparent;
+        border: none;
+        padding: 0px;
+        width: 100%;
+    }
+
+    .footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
 }
